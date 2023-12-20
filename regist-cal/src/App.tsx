@@ -9,11 +9,6 @@ const App = () => {
   const [client, setClient] = useState<any>(null);
   const [accessToken, setAccessToken] = useState('');
   const [eventId, setEventId] = useState('');
-  console.log("eventId", eventId)
-
-  console.log("アクセストークン", accessToken)
-  console.log("クライアント", client)
-
   const { executeFetch, data, loading, error } = useFetch();
 
   useEffect(() => {
